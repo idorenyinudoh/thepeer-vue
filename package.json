@@ -1,6 +1,6 @@
 {
   "name": "thepeer-vue",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "Official Vue package for Thepeer",
   "keywords": [
     "financial",
@@ -22,6 +22,7 @@
   "module": "./dist/thepeer-vue.js",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/thepeer-vue.js",
       "require": "./dist/thepeer-vue.umd.cjs"
     }
@@ -30,7 +31,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly && mv dist/lib dist/types",
     "preview": "vite preview"
   },
   "devDependencies": {
