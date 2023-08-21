@@ -1,5 +1,5 @@
 <script setup>
-import { useCheckout, useDirectCharge, useSend } from './src/index'
+import { useCheckout, useDirectCharge, useSend } from './lib/index'
 
 const config = {
   currency: 'NGN',
