@@ -1,6 +1,6 @@
 import { watchEffect, toValue } from 'vue'
-import useScript from './script'
-import { CheckoutProps, ThepeerProps } from './types'
+import useScript from './script.js'
+import { CheckoutProps, ThepeerProps } from './types.js'
 
 declare const window: Window & typeof globalThis & { Thepeer: ThepeerProps }
 
