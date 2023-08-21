@@ -1,4 +1,4 @@
-import { ref, onMounted } from 'vue'
+import { ref, watchEffect } from 'vue'
 
 type StateType = {
   loaded: boolean,
@@ -27,7 +27,7 @@ export default function useScript() {
     }
   }
 
-  onMounted(() => {
+  watchEffect(() => {
     const scriptElement = document.getElementById('thepeer_script')
     const scriptSrc = scriptElement && scriptElement.getAttribute('src')
 
@@ -53,5 +53,5 @@ export default function useScript() {
     }
   })
 
-  return [ state.value.loaded, state.value.error ]
+  return state
 }
