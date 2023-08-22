@@ -1,18 +1,73 @@
-# Vue 3 + TypeScript + Vite
+# thepeer-vue
+Official Vue package for [Thepeer](https://thepeer.co).
+<br>
+<p align="center">
+   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/9c4e019f-d5cb-482a-9c03-b9ff90a5f459" alt="screenshot of thepeer's direct charge sdk">
+   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/ff838e9c-d368-4ea2-bd0f-ec558cfd684d" alt="screenshot of thepeer's send sdk">
+</p>
+<p align="center">
+   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/a5e1b510-6048-4547-8f9e-34afe6acd1be" alt="screenshot of thepeer's checkout sdk">
+</p>
+<br>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Installation
+> This package only supports Vue 3.
 
-## Recommended IDE Setup
+### npm
+```shell
+npm install thepeer-vue
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### yarn
+```shell
+yarn add thepeer-vue
+```
 
-## Type Support For `.vue` Imports in TS
+## Usage
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+> Only use in `<script setup>` or `setup()`.
+>
+> Applies to Vue and Nuxt.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+```html
+<script setup lang="ts">
+import { useCheckout } from 'thepeer-vue'
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+const checkoutWithThepeer = () => {
+  console.log('initializing sdk')
+
+  useCheckout({
+    currency: 'NGN',
+    amount: 10000,
+    meta: {
+      discount: 'black friday'
+    },
+    onSuccess: (response: any) => {
+      console.log('🚀 onSuccess', response)
+    },
+    onError: (response: any) => {
+      console.log('🚀 onError', response)
+    },
+    onClose: (response: any) => {
+      console.log('🚀 onClose', response)
+    },
+    publicKey: 'YOUR_PUBLIC_KEY',
+    email: 'CUSTOMER_EMAIL'
+  })
+}
+</script>
+
+<template>
+   <button @click="checkoutWithThepeer">Pay with Thepeer</button>
+</template>
+```
+
+Implementation is similar for `useSend` and `useDirectCharge`.
+
+## Configuration Options
+- [Direct Charge](https://docs.thepeer.co/sdk/direct-charge#parameters)
+- [Checkout](https://docs.thepeer.co/sdk/checkout#parameters)
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+&copy; Idorenyin Udoh
