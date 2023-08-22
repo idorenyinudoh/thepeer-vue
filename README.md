@@ -1,10 +1,13 @@
 # thepeer-vue
-Vue package for [Thepeer](https://thepeer.co).
 <br>
 <p align="center">
-   <img width="1024" alt="vue x thepeer" src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/c4227da9-a383-4cc6-b63e-ee7a59b7da47">
+   <img width="500" alt="vue x thepeer" src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/c4227da9-a383-4cc6-b63e-ee7a59b7da47">
 </p>
 <br>
+
+<h3 align="center">
+   Vue package for <a href="https://thepeer.co" target="_blank">Thepeer</a>.
+</h3>
 
 ## Installation
 > This package only supports Vue 3.
