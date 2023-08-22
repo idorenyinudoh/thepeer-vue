@@ -69,5 +69,5 @@ Implementation is similar for `useSend` and `useDirectCharge`.
 - [Checkout](https://docs.thepeer.co/sdk/checkout#parameters)
 
 ## License
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://github.com/idorenyinudoh/thepeer-vue/blob/main/LICENSE)
 &copy; Idorenyin Udoh
