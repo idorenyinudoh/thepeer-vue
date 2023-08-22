@@ -1,7 +1,7 @@
 {
   "name": "thepeer-vue",
-  "version": "0.0.8",
-  "description": "Official Vue package for Thepeer",
+  "version": "0.0.9",
+  "description": "Vue package for Thepeer",
   "keywords": [
     "financial",
     "data",
