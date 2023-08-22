@@ -1,12 +1,8 @@
 # thepeer-vue
-Official Vue package for [Thepeer](https://thepeer.co).
+Vue package for [Thepeer](https://thepeer.co).
 <br>
 <p align="center">
-   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/9c4e019f-d5cb-482a-9c03-b9ff90a5f459" alt="screenshot of thepeer's direct charge sdk">
-   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/ff838e9c-d368-4ea2-bd0f-ec558cfd684d" alt="screenshot of thepeer's send sdk">
-</p>
-<p align="center">
-   <img src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/a5e1b510-6048-4547-8f9e-34afe6acd1be" alt="screenshot of thepeer's checkout sdk">
+   <img width="1024" alt="vue x thepeer" src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/c4227da9-a383-4cc6-b63e-ee7a59b7da47">
 </p>
 <br>
 
