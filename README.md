@@ -1,8 +1,9 @@
 # thepeer-vue
 <br>
 <p align="center">
-   <img width="500" alt="vue x thepeer" src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/c4227da9-a383-4cc6-b63e-ee7a59b7da47">
+   <img width="500" alt="vue x thepeer" src="https://github.com/idorenyinudoh/thepeer-vue/assets/44336070/ac1b64c3-0eb0-4de6-b8d0-410e7ea2f26f">
 </p>
+
 <br>
 
 <h3 align="center">
